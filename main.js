@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const submitAnswerBtn = document.getElementById('submit-answer-btn');
             const stopQuizBtn = document.getElementById('stop-quiz-btn');
 
+            const nextQuestionBtn = document.getElementById('next-question-btn');
+
             const finalScore = document.getElementById('final-score');
             const reviewBody = document.getElementById('review-body');
             const restartBtn = document.getElementById('restart-btn');
@@ -125,6 +127,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 answerInput.value = '';
                 answerInput.disabled = false;
                 submitAnswerBtn.disabled = false;
+                submitAnswerBtn.classList.remove('hidden');
+                nextQuestionBtn.classList.add('hidden');
                 answerInput.focus();
             }
 
@@ -149,20 +153,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 void iconDisplay.offsetWidth; // Force reflow
                 iconDisplay.classList.add(isCorrect ? 'animate-joy' : 'animate-sad');
 
-                let pauseDuration = 1000;
                 if (isCorrect) {
                     statusBar.textContent = '答對了！';
                     statusBar.className = 'h-8 mb-4 text-lg font-semibold text-green-500';
                 } else {
                     statusBar.innerHTML = `答錯了... 正確答案是: <span class="font-bold">${currentQuestion.hiragana.join(' or ')}</span>`;
                     statusBar.className = 'h-8 mb-4 text-lg font-semibold text-red-500';
-                    pauseDuration = 2500; // Longer pause for incorrect answers
                 }
 
-                setTimeout(() => {
-                    currentQuestionIndex++;
-                    displayQuestion();
-                }, pauseDuration);
+                submitAnswerBtn.classList.add('hidden');
+                nextQuestionBtn.classList.remove('hidden');
             }
 
             function endQuiz() {
@@ -226,6 +226,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             stopQuizBtn.addEventListener('click', endQuiz);
             restartBtn.addEventListener('click', resetApp);
+
+            nextQuestionBtn.addEventListener('click', () => {
+                currentQuestionIndex++;
+                displayQuestion();
+            });
 
             // --- INITIALIZATION ---
             fetch('jyosuushi.json')
