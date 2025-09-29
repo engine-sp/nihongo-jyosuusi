@@ -11,4 +11,5 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1; /* 確保它在其他內容的下方 */
+  opacity: 0.2; /* 透過 CSS 控制整個 Canvas 的透明度 */
 }
