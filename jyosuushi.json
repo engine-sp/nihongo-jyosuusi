@@ -1,0 +1,277 @@
+
+{
+  "counters": {
+    "つ": {
+      "name": { "ch": "物品", "en": "General items" },
+      "icon": ["🍎", "🔑", "🎁"],
+      "items": [
+        { "count": 1, "kanji": "一つ", "hiragana": ["ひとつ"] },
+        { "count": 2, "kanji": "二つ", "hiragana": ["ふたつ"] },
+        { "count": 3, "kanji": "三つ", "hiragana": ["みっつ"] },
+        { "count": 4, "kanji": "四つ", "hiragana": ["よっつ"] },
+        { "count": 5, "kanji": "五つ", "hiragana": ["いつつ"] },
+        { "count": 6, "kanji": "六つ", "hiragana": ["むっつ"] },
+        { "count": 7, "kanji": "七つ", "hiragana": ["ななつ"] },
+        { "count": 8, "kanji": "八つ", "hiragana": ["やっつ"] },
+        { "count": 9, "kanji": "九つ", "hiragana": ["ここのつ"] },
+        { "count": 10, "kanji": "十", "hiragana": ["とお"] }
+      ],
+      "question": "いくつ"
+    },
+    "人": {
+      "name": { "ch": "人", "en": "People" },
+      "icon":  ["👨", "👩", "👧","👶", "🧓"],
+      "items": [
+        { "count": 1, "kanji": "一人", "hiragana": ["ひとり"] },
+        { "count": 2, "kanji": "二人", "hiragana": ["ふたり"] },
+        { "count": 3, "kanji": "三人", "hiragana": ["さんにん"] },
+        { "count": 4, "kanji": "四人", "hiragana": ["よにん"] },
+        { "count": 5, "kanji": "五人", "hiragana": ["ごにん"] },
+        { "count": 6, "kanji": "六人", "hiragana": ["ろくにん"] },
+        { "count": 7, "kanji": "七人", "hiragana": ["ななにん", "しちにん"] },
+        { "count": 8, "kanji": "八人", "hiragana": ["はちにん"] },
+        { "count": 9, "kanji": "九人", "hiragana": ["きゅうにん"] },
+        { "count": 10, "kanji": "十人", "hiragana": ["じゅうにん"] }
+      ],
+      "question": "何人 (なんにん)"
+    },
+    "番": {
+      "name": { "ch": "順序", "en": "Order" },
+      "icon": ["📝", "📋", "💯"],
+      "items": [
+        { "count": 1, "kanji": "一番", "hiragana": ["いちばん"] },
+        { "count": 2, "kanji": "二番", "hiragana": ["にばん"] },
+        { "count": 3, "kanji": "三番", "hiragana": ["さんばん"] },
+        { "count": 4, "kanji": "四番", "hiragana": ["よんばん"] },
+        { "count": 5, "kanji": "五番", "hiragana": ["ごばん"] },
+        { "count": 6, "kanji": "六番", "hiragana": ["ろくばん"] },
+        { "count": 7, "kanji": "七番", "hiragana": ["ななばん"] },
+        { "count": 8, "kanji": "八番", "hiragana": ["はちばん"] },
+        { "count": 9, "kanji": "九番", "hiragana": ["きゅうばん"] },
+        { "count": 10, "kanji": "十番", "hiragana": ["じゅうばん"] }
+      ],
+      "question": "何番 (なんばん)"
+    },
+    "枚": {
+      "name": { "ch": "薄而扁平的東西", "en": "Thin, flat objects" },
+      "icon": ["👕", "📄", "💵"],
+      "items": [
+        { "count": 1, "kanji": "一枚", "hiragana": ["いちまい"] },
+        { "count": 2, "kanji": "二枚", "hiragana": ["にまい"] },
+        { "count": 3, "kanji": "三枚", "hiragana": ["さんまい"] },
+        { "count": 4, "kanji": "四枚", "hiragana": ["よんまい"] },
+        { "count": 5, "kanji": "五枚", "hiragana": ["ごまい"] },
+        { "count": 6, "kanji": "六枚", "hiragana": ["ろくまい"] },
+        { "count": 7, "kanji": "七枚", "hiragana": ["ななまい"] },
+        { "count": 8, "kanji": "八枚", "hiragana": ["はちまい"] },
+        { "count": 9, "kanji": "九枚", "hiragana": ["きゅうまい"] },
+        { "count": 10, "kanji": "十枚", "hiragana": ["じゅうまい"] }
+      ],
+      "question": "何枚 (なんまい)"
+    },
+    "回": {
+      "name": { "ch": "頻率", "en": "Frequency" },
+      "icon": ["📅", "⏰", "🔁"],
+      "items": [
+        { "count": 1, "kanji": "一回", "hiragana": ["いっかい"] },
+        { "count": 2, "kanji": "二回", "hiragana": ["にかい"] },
+        { "count": 3, "kanji": "三回", "hiragana": ["さんかい"] },
+        { "count": 4, "kanji": "四回", "hiragana": ["よんかい"] },
+        { "count": 5, "kanji": "五回", "hiragana": ["ごかい"] },
+        { "count": 6, "kanji": "六回", "hiragana": ["ろっかい"] },
+        { "count": 7, "kanji": "七回", "hiragana": ["ななかい"] },
+        { "count": 8, "kanji": "八回", "hiragana": ["はっかい"] },
+        { "count": 9, "kanji": "九回", "hiragana": ["きゅうかい"] },
+        { "count": 10, "kanji": "十回", "hiragana": ["じゅっかい", "じっかい"] }
+      ],
+      "question": "何回 (なんかい)"
+    },
+    "個": {
+      "name": { "ch": "小物品", "en": "Small items" },
+      "icon": ["🎲", "💎", "🔘"],
+      "items": [
+        { "count": 1, "kanji": "一個", "hiragana": ["いっこ"] },
+        { "count": 2, "kanji": "二個", "hiragana": ["にこ"] },
+        { "count": 3, "kanji": "三個", "hiragana": ["さんこ"] },
+        { "count": 4, "kanji": "四個", "hiragana": ["よんこ"] },
+        { "count": 5, "kanji": "五個", "hiragana": ["ごこ"] },
+        { "count": 6, "kanji": "六個", "hiragana": ["ろっこ"] },
+        { "count": 7, "kanji": "七個", "hiragana": ["ななこ"] },
+        { "count": 8, "kanji": "八個", "hiragana": ["はっこ"] },
+        { "count": 9, "kanji": "九個", "hiragana": ["きゅうこ"] },
+        { "count": 10, "kanji": "十個", "hiragana": ["じゅっこ", "じっこ"] }
+      ],
+      "question": "何個 (なんこ)"
+    },
+    "足": {
+      "name": { "ch": "鞋和襪", "en": "Shoes and socks" },
+      "icon": ["👟", "👠", "🧦"],
+      "items": [
+        { "count": 1, "kanji": "一足", "hiragana": ["いっそく"] },
+        { "count": 2, "kanji": "二足", "hiragana": ["にそく"] },
+        { "count": 3, "kanji": "三足", "hiragana": ["さんぞく"] },
+        { "count": 4, "kanji": "四足", "hiragana": ["よんそく"] },
+        { "count": 5, "kanji": "五足", "hiragana": ["ごそく"] },
+        { "count": 6, "kanji": "六足", "hiragana": ["ろくそく"] },
+        { "count": 7, "kanji": "七足", "hiragana": ["ななそく"] },
+        { "count": 8, "kanji": "八足", "hiragana": ["はっそく"] },
+        { "count": 9, "kanji": "九足", "hiragana": ["きゅうそく"] },
+        { "count": 10, "kanji": "十足", "hiragana": ["じゅっそく", "じっそく"] }
+      ],
+      "question": "何足 (なんぞく)"
+    },
+    "軒": {
+      "name": { "ch": "房屋", "en": "Houses" },
+      "icon": ["🏠", "🏡", "🏘️"],
+      "items": [
+        { "count": 1, "kanji": "一軒", "hiragana": ["いっけん"] },
+        { "count": 2, "kanji": "二軒", "hiragana": ["にけん"] },
+        { "count": 3, "kanji": "三軒", "hiragana": ["さんげん"] },
+        { "count": 4, "kanji": "四軒", "hiragana": ["よんけん"] },
+        { "count": 5, "kanji": "五軒", "hiragana": ["ごけん"] },
+        { "count": 6, "kanji": "六軒", "hiragana": ["ろっけん"] },
+        { "count": 7, "kanji": "七軒", "hiragana": ["ななけん"] },
+        { "count": 8, "kanji": "八軒", "hiragana": ["はっけん"] },
+        { "count": 9, "kanji": "九軒", "hiragana": ["きゅうけん"] },
+        { "count": 10, "kanji": "十軒", "hiragana": ["じゅっけん", "じっけん"] }
+      ],
+      "question": "何軒 (なんげん)"
+    },
+    "台": {
+      "name": { "ch": "機器、車輛等", "en": "Machines, vehicles, etc." },
+      "icon": ["🚗", "🚲", "💻"],
+      "items": [
+        { "count": 1, "kanji": "一台", "hiragana": ["いちだい"] },
+        { "count": 2, "kanji": "二台", "hiragana": ["にだい"] },
+        { "count": 3, "kanji": "三台", "hiragana": ["さんだい"] },
+        { "count": 4, "kanji": "四台", "hiragana": ["よんだい"] },
+        { "count": 5, "kanji": "五台", "hiragana": ["ごだい"] },
+        { "count": 6, "kanji": "六台", "hiragana": ["ろくだい"] },
+        { "count": 7, "kanji": "七台", "hiragana": ["ななだい"] },
+        { "count": 8, "kanji": "八台", "hiragana": ["はちだい"] },
+        { "count": 9, "kanji": "九台", "hiragana": ["きゅうだい"] },
+        { "count": 10, "kanji": "十台", "hiragana": ["じゅうだい"] }
+      ],
+      "question": "何台 (なんだい)"
+    },
+    "歳": {
+      "name": { "ch": "年齡", "en": "Age" },
+      "icon": ["🎂", "👶", "🧓"],
+      "items": [
+        { "count": 1, "kanji": "一歳", "hiragana": ["いっさい"] },
+        { "count": 2, "kanji": "二歳", "hiragana": ["にさい"] },
+        { "count": 3, "kanji": "三歳", "hiragana": ["さんさい"] },
+        { "count": 4, "kanji": "四歳", "hiragana": ["よんさい"] },
+        { "count": 5, "kanji": "五歳", "hiragana": ["ごさい"] },
+        { "count": 6, "kanji": "六歳", "hiragana": ["ろくさい"] },
+        { "count": 7, "kanji": "七歳", "hiragana": ["ななさい"] },
+        { "count": 8, "kanji": "八歳", "hiragana": ["はっさい"] },
+        { "count": 9, "kanji": "九歳", "hiragana": ["きゅうさい"] },
+        { "count": 10, "kanji": "十歳", "hiragana": ["じゅっさい", "じっさい"] }
+      ],
+      "question": "何歳 (なんさい)"
+    },
+    "冊": {
+      "name": { "ch": "書本", "en": "Books" },
+      "icon": ["📚", "📖", "📓"],
+      "items": [
+        { "count": 1, "kanji": "一冊", "hiragana": ["いっさつ"] },
+        { "count": 2, "kanji": "二冊", "hiragana": ["にさつ"] },
+        { "count": 3, "kanji": "三冊", "hiragana": ["さんさつ"] },
+        { "count": 4, "kanji": "四冊", "hiragana": ["よんさつ"] },
+        { "count": 5, "kanji": "五冊", "hiragana": ["ごさつ"] },
+        { "count": 6, "kanji": "六冊", "hiragana": ["ろくさつ"] },
+        { "count": 7, "kanji": "七冊", "hiragana": ["ななさつ"] },
+        { "count": 8, "kanji": "八冊", "hiragana": ["はっさつ"] },
+        { "count": 9, "kanji": "九冊", "hiragana": ["きゅうさつ"] },
+        { "count": 10, "kanji": "十冊", "hiragana": ["じゅっさつ", "じっさつ"] }
+      ],
+      "question": "何冊 (なんさつ)"
+    },
+    "着": {
+      "name": { "ch": "服裝", "en": "Clothing" },
+      "icon": ["👕", "👗", "👖"],
+      "items": [
+        { "count": 1, "kanji": "一着", "hiragana": ["いっちゃく"] },
+        { "count": 2, "kanji": "二着", "hiragana": ["にちゃく"] },
+        { "count": 3, "kanji": "三着", "hiragana": ["さんちゃく"] },
+        { "count": 4, "kanji": "四着", "hiragana": ["よんちゃく"] },
+        { "count": 5, "kanji": "五着", "hiragana": ["ごちゃく"] },
+        { "count": 6, "kanji": "六着", "hiragana": ["ろくちゃく"] },
+        { "count": 7, "kanji": "七着", "hiragana": ["ななちゃく"] },
+        { "count": 8, "kanji": "八着", "hiragana": ["はっちゃく"] },
+        { "count": 9, "kanji": "九着", "hiragana": ["きゅうちゃく"] },
+        { "count": 10, "kanji": "十着", "hiragana": ["じゅっちゃく", "じっちゃく"] }
+      ],
+      "question": "何着 (なんちゃく)"
+    },
+    "階": {
+      "name": { "ch": "建築物的樓層", "en": "Floors of a building" },
+      "icon": ["🏢", "🏬", "🏦"],
+      "items": [
+        { "count": 1, "kanji": "一階", "hiragana": ["いっかい"] },
+        { "count": 2, "kanji": "二階", "hiragana": ["にかい"] },
+        { "count": 3, "kanji": "三階", "hiragana": ["さんがい"] },
+        { "count": 4, "kanji": "四階", "hiragana": ["よんかい"] },
+        { "count": 5, "kanji": "五階", "hiragana": ["ごかい"] },
+        { "count": 6, "kanji": "六階", "hiragana": ["ろっかい"] },
+        { "count": 7, "kanji": "七階", "hiragana": ["ななかい"] },
+        { "count": 8, "kanji": "八階", "hiragana": ["はっかい"] },
+        { "count": 9, "kanji": "九階", "hiragana": ["きゅうかい"] },
+        { "count": 10, "kanji": "十階", "hiragana": ["じゅっかい", "じっかい"] }
+      ],
+      "question": "何階 (なんがい)"
+    },
+    "本": {
+      "name": { "ch": "細長的東西", "en": "Long, thin objects" },
+      "icon": ["✏️", "🍌", "☂️"],
+      "items": [
+        { "count": 1, "kanji": "一本", "hiragana": ["いっぽん"] },
+        { "count": 2, "kanji": "二本", "hiragana": ["にほん"] },
+        { "count": 3, "kanji": "三本", "hiragana": ["さんぼん"] },
+        { "count": 4, "kanji": "四本", "hiragana": ["よんほん"] },
+        { "count": 5, "kanji": "五本", "hiragana": ["ごほん"] },
+        { "count": 6, "kanji": "六本", "hiragana": ["ろっぽん"] },
+        { "count": 7, "kanji": "七本", "hiragana": ["ななほん"] },
+        { "count": 8, "kanji": "八本", "hiragana": ["はっぽん"] },
+        { "count": 9, "kanji": "九本", "hiragana": ["きゅうほん"] },
+        { "count": 10, "kanji": "十本", "hiragana": ["じゅっぽん", "じっぽん"] }
+      ],
+      "question": "何本 (なんぼん)"
+    },
+    "杯": {
+      "name": { "ch": "用杯子等裝的飲料", "en": "Drinks in cups, etc." },
+      "icon": ["☕", "🍵", "🥤"],
+      "items": [
+        { "count": 1, "kanji": "一杯", "hiragana": ["いっぱい"] },
+        { "count": 2, "kanji": "二杯", "hiragana": ["にはい"] },
+        { "count": 3, "kanji": "三杯", "hiragana": ["さんばい"] },
+        { "count": 4, "kanji": "四杯", "hiragana": ["よんはい"] },
+        { "count": 5, "kanji": "五杯", "hiragana": ["ごはい"] },
+        { "count": 6, "kanji": "六杯", "hiragana": ["ろっぱい"] },
+        { "count": 7, "kanji": "七杯", "hiragana": ["ななはい"] },
+        { "count": 8, "kanji": "八杯", "hiragana": ["はっぱい"] },
+        { "count": 9, "kanji": "九杯", "hiragana": ["きゅうはい"] },
+        { "count": 10, "kanji": "十杯", "hiragana": ["じゅっぱい", "じっぱい"] }
+      ],
+      "question": "何杯 (なんばい)"
+    },
+    "匹": {
+      "name": { "ch": "小動物、魚、昆蟲", "en": "Small animals, fish, insects" },
+      "icon": ["🐈", "🐟", "🐛"],
+      "items": [
+        { "count": 1, "kanji": "一匹", "hiragana": ["いっぴき"] },
+        { "count": 2, "kanji": "二匹", "hiragana": ["にひき"] },
+        { "count": 3, "kanji": "三匹", "hiragana": ["さんびき"] },
+        { "count": 4, "kanji": "四匹", "hiragana": ["よんひき"] },
+        { "count": 5, "kanji": "五匹", "hiragana": ["ごひき"] },
+        { "count": 6, "kanji": "六匹", "hiragana": ["ろっぴき"] },
+        { "count": 7, "kanji": "七匹", "hiragana": ["ななひき"] },
+        { "count": 8, "kanji": "八匹", "hiragana": ["はっぴき"] },
+        { "count": 9, "kanji": "九匹", "hiragana": ["きゅうひき"] },
+        { "count": 10, "kanji": "十匹", "hiragana": ["じゅっぴき", "じっぴき"] }
+      ],
+      "question": "何匹 (なんびき)"
+    }
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日文量詞平假名練習</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="background.css">
+    <style>
+        .animate-joy {
+            animation: jump-for-joy 0.7s ease;
+        }
+        .animate-sad {
+            animation: shake-head-sad 0.6s ease;
+        }
+        @keyframes jump-for-joy {
+            0%, 100% { transform: translateY(0) rotate(0); }
+            25% { transform: translateY(-20px) rotate(-5deg); }
+            50% { transform: translateY(0) rotate(0); }
+            75% { transform: translateY(-10px) rotate(5deg); }
+        }
+        @keyframes shake-head-sad {
+            0%, 100% { transform: translateX(0) rotate(0); }
+            20% { transform: translateX(-10px) rotate(-5deg); }
+            40% { transform: translateX(10px) rotate(5deg); }
+            60% { transform: translateX(-10px) rotate(-5deg); }
+            80% { transform: translateX(10px) rotate(5deg); }
+        }
+
+        /* Responsive Table Styles */
+        @media (max-width: 768px) {
+            #review-table thead {
+                display: none; /* Hide table headers on mobile */
+            }
+            #review-table tr {
+                display: block;
+                margin-bottom: 1rem;
+                border-bottom: 2px solid #ddd;
+            }
+            #review-table td {
+                display: block;
+                text-align: right;
+                padding-left: 50%; /* Create space for the label */
+                position: relative;
+                border-bottom: 1px dotted #ccc;
+            }
+            #review-table td:last-child {
+                border-bottom: 0;
+            }
+            #review-table td::before {
+                content: attr(data-label); /* Use data-label for content */
+                position: absolute;
+                left: 0.5rem;
+                width: 45%;
+                padding-right: 0.5rem;
+                text-align: left;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 flex items-center justify-center min-h-screen">
+
+    <canvas id="backgroundCanvas"></canvas>
+
+    <div id="app" class="container mx-auto p-4 max-w-2xl bg-white/30 backdrop-blur-sm rounded-lg shadow-lg">
+
+        <!-- Start Screen -->
+        <div id="start-screen">
+            <h1 class="text-4xl font-bold text-center mb-8">日文量詞平假名練習</h1>
+            <div class="text-center">
+                <p class="text-lg mb-4">練習範圍設定：<span id="scope-display" class="font-semibold">全部</span></p>
+                <button id="modify-scope-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    修改練習範圍
+                </button>
+                <button id="start-quiz-btn" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ml-4">
+                    開始練習
+                </button>
+            </div>
+        </div>
+
+        <!-- Practice Screen -->
+        <div id="practice-screen" class="hidden text-center">
+            <p id="progress-text" class="text-lg font-semibold mb-4">第1題 / 共10題</p>
+            <p id="category-display" class="text-gray-500 mb-2"></p>
+            <div id="icon-display" class="text-8xl mb-4">...</div>
+            <div id="kanji-display" class="text-6xl font-bold mb-4">...</div>
+            <div id="status-bar" class="h-8 mb-4 text-lg font-semibold">&nbsp;</div>
+            <input type="text" id="answer-input" class="border-2 border-gray-300 p-2 text-2xl text-center rounded w-full mb-4" placeholder="請輸入平假名">
+            <div>
+                <button id="submit-answer-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">送出答案</button>
+                <button id="stop-quiz-btn" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-4">臨時終止</button>
+            </div>
+        </div>
+
+        <!-- End Screen -->
+        <div id="end-screen" class="hidden text-center">
+            <h2 class="text-3xl font-bold mb-4">練習結束！</h2>
+            <p id="final-score" class="text-2xl mb-6">您答對了 0 / 10 題！</p>
+            <div class="overflow-x-auto">
+                <table id="review-table" class="min-w-full bg-white">
+                    <thead class="bg-gray-800 text-white">
+                        <tr>
+                            <th class="py-2 px-4">題目</th>
+                            <th class="py-2 px-4">您的答案</th>
+                            <th class="py-2 px-4">正解？</th>
+                            <th class="py-2 px-4">正確答案</th>
+                        </tr>
+                    </thead>
+                    <tbody id="review-body">
+                        <!-- Review rows will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+            <button id="restart-btn" class="my-6 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                再練習一次
+            </button>
+        </div>
+    </div>
+
+    <!-- Scope Selection Modal -->
+    <div id="scope-modal" class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full">
+        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+            <h3 class="text-lg font-bold mb-4">練習範圍的選擇</h3>
+            <div id="scope-checkboxes" class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4">
+                <!-- Checkboxes will be inserted here -->
+            </div>
+            <div class="flex justify-between mb-4">
+                <button id="select-all-btn" class="text-sm text-blue-500 hover:underline">全選</button>
+                <button id="deselect-all-btn" class="text-sm text-blue-500 hover:underline">全取消</button>
+            </div>
+            <p id="scope-error" class="text-red-500 text-sm hidden mb-4">請至少選擇一個類別。</p>
+            <div class="text-right">
+                <button id="confirm-scope-btn" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                    確定
+                </button>
+                 <button id="cancel-scope-btn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded ml-2">
+                    取消
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="background.js"></script>
+</body>
+</html>

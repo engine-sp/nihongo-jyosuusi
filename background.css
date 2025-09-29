@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+#backgroundCanvas {
+  display: block; /* 避免一些瀏覽器在 canvas 底部添加的額外空間 */
+  position: fixed; /* 固定在視窗上 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* 確保它在其他內容的下方 */
+}
