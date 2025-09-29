@@ -12,7 +12,7 @@ let offsetX = 0;
 let offsetY = 0;
 const ANIMATION_SPEED = 0.2; // 每幀移動的像素數
 let ICON_CHARACTERS = []; // <--- 改為動態載入
-const FONT_COLOR = 'rgba(100, 100, 100, 0.2)'; 
+const FONT_COLOR = 'hsla(0, 0%, 39%, 0.2)'; 
 
 // ----------------------------------------------------
 // A. 建立單位型 Canvas (只執行一次)
